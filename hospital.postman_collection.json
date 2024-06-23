@@ -1,0 +1,845 @@
+{
+	"info": {
+		"_postman_id": "b5aa055b-1715-44f3-994d-d203aa56c895",
+		"name": "hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34695522"
+	},
+	"item": [
+		{
+			"name": "losEndPointsParaDoctor",
+			"item": [
+				{
+					"name": "localhost:8080/doctor/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/doctor/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 3,\r\n    \"nombre\" : \"Juan\",\r\n    \"apellido\" : \"Gonzales\",\r\n    \"nivel\" : 3,\r\n    \"cobra\" : 60000,\r\n    \"disponible_ono\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/doctor/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/eliminar/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/doctor/eliminar/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"eliminar",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/doctor/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/editarConId/52?id=53&nombre=mona&apellido=nada&nivel=3&disponible_ono=true",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/doctor/editarConId/1?id=1&nombre=Pepito&apellido=Perez&nivel=5&disponible_ono=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"editarConId",
+								"1"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "nombre",
+									"value": "Pepito"
+								},
+								{
+									"key": "apellido",
+									"value": "Perez"
+								},
+								{
+									"key": "nivel",
+									"value": "5"
+								},
+								{
+									"key": "disponible_ono",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nombre\" : \"Pepito\",\r\n    \"apellido\" : \"Perez\",\r\n    \"nivel\" : 5,\r\n    \"cobra\" : 100000,\r\n    \"disponible_ono\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/doctor/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/3/paciente/atendido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/doctor/1/paciente/atendido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"1",
+								"paciente",
+								"atendido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/atendidoshoy/2/2024-06-17",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/doctor/atendidoshoy/1/2024-06-17",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"doctor",
+								"atendidoshoy",
+								"1",
+								"2024-06-17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "endPointsEnfemero",
+			"item": [
+				{
+					"name": "localhost:8080/enfermero/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/enfermero/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enfermero",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/enfermero/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 2,\r\n    \"nombre\" : \"Camilo\",\r\n    \"apellido\" : \"Mendez\",\r\n    \"nivel\" : 2,\r\n    \"cobra\" : 40000,\r\n    \"disponible_ono\" : \"true\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/enfermero/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enfermero",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/enfermero/eliminar-1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/enfermero/eliminar/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enfermero",
+								"eliminar",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/enfermero/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/enfermero/buscar/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enfermero",
+								"buscar",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/enfermero/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 6,\r\n    \"nombre\" : \"Camilo\",\r\n    \"apellido\" : \"Mendez\",\r\n    \"nivel\" : 2,\r\n    \"cobra\" : 40000,\r\n    \"disponible_ono\" : \"false\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/enfermero/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enfermero",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/enfermero/1/paciente/atendido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/enfermero/6/paciente/atendido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enfermero",
+								"6",
+								"paciente",
+								"atendido"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "endPointsRegisPaci",
+			"item": [
+				{
+					"name": "localhost:8080/registros/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registros/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registro/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num_registro\" : 5,\r\n    \"nombre_paci\" : \"Juansito\",\r\n    \"apellido_paci\" : \"Gomez\",\r\n    \"fechaNac\" : \"2001-03-19\",\r\n    \"fecha_registro\" : \"2024-06-22\",\r\n    \"nivel_gravedad\" : 5,\r\n    \"pago\" : \"pendiente\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/registros/crear/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"crear",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registros/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registros/eliminar/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"eliminar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registros/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registros/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registros/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"num_registro\": 2,\r\n        \"nombre_paci\": \"Sofia\",\r\n        \"apellido_paci\": \"López\",\r\n        \"fechaNac\": \"2000-07-12\",\r\n        \"fecha_registro\": \"2024-06-22\",\r\n        \"nivel_gravedad\": 4,\r\n        \"pago\": \"pendiente\",\r\n        \"totalApagar\": 80000,\r\n        \"registro\": \"null , el nombre del secretarioe es : Paula el Id es : 1  el doctor que lo atendio es : Juanita el id es: 2\",\r\n        \"enferme\": null,\r\n        \"secre\": null,\r\n        \"respo\": null,\r\n        \"undoctor\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/registros/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registros/pagar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registros/pagar/102",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"pagar",
+								"102"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registros/pagartodo/nombre/apellido/fecha_nac",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registros/pagartodo/nombre/apellido/fecha_nac",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"pagartodo",
+								"nombre",
+								"apellido",
+								"fecha_nac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/registros/deudas/Sebas/Nieto/2002-02-02",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registros/deudas/Sebas/Nieto/2002-02-02",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registros",
+								"deudas",
+								"Sebas",
+								"Nieto",
+								"2002-02-02"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "endPointsResponsables",
+			"item": [
+				{
+					"name": "localhost:8080/responsable/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/responsable/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"responsable",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/responsable/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 2,\r\n    \"nombre\" : \"Susana\",\r\n    \"apellido\" : \"Gomez\",\r\n    \"fecha\" : \"22-06-2024\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/responsable/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"responsable",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/responsable/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/responsable/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"responsable",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/responsable/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/responsable/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"responsable",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/responsable/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/responsable/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"responsable",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/responsable/nombre/Milgen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/responsable/buscar/Milgen",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"responsable",
+								"buscar",
+								"Milgen"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "endPointsSecretarios",
+			"item": [
+				{
+					"name": "localhost:8080/secretario/traerlos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/secretario/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/secretario/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_secre\" : 2,\r\n    \"nom_secre\" : \"Paulo\",\r\n    \"apellido\" : \"Londra\",\r\n    \"disponible_ono\" : \"true\",\r\n    \"num_telefonico\" : 456\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/secretario/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/secretario/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/secretario/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/secretario/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/secretario/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/secretario/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_secre\": 1,\r\n        \"nom_secre\": \"Paula\",\r\n        \"apellido\": \"Narvaez\",\r\n        \"disponible_ono\": true,\r\n        \"num_telefonico\": 123\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/secretario/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/doctor/2/paciente/atendido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/secretario/2/paciente/atendido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"2",
+								"paciente",
+								"atendido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/secretario/123/casarojaCalle13/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/secretario/123/casarojaCalle13/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secretario",
+								"123",
+								"casarojaCalle13",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
